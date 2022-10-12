@@ -23,16 +23,76 @@ body{
 main{
     max-width: 1000px;
     margin: 20rem auto;
+    display: flex;
    
     /* background-image: url("images/bg-desktop.png"); */
 }
-.fylo{
-    background-color: hsl(228, 45%, 44%);
+.first-container{
+    background-color: hsl(228, 56%, 26%);
     height: 175px;
     width: 275px;
     border-radius: 5px 75px 5px 5px;
     
 }
+.fylo{
 
+    margin-left: 30px;
+    padding: 15px 0 10px 0;
+    margin-top: 10px;
+}
+.objects{
+    padding: 20px;
+    display: flex;
+
+}
+.objects img{
+padding: 5px;
+
+}
+
+.first-container{
+    
+}
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.storage{
+    margin: 24px;
+    padding: 15px;
+    height: 150px;
+    width: 700px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px;
+}
+.gb{
+    color: white;
+    letter-spacing: 2px;
+}
+.gb span{
+    font-weight: 700;
+    
+}
+.meter { 
+    height: 20px; 
+    position: relative;
+    background: hsl(335, 100%, 65%);
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .meter span{
+    height: 20px;
+    width: 81.5%;
+    background: white;
+    position: absolute;
+    border-radius: 25px;
+  }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
