@@ -81,18 +81,67 @@ padding: 5px;
 }
 .meter { 
     height: 20px; 
+    width: 100%;
     position: relative;
-    background: hsl(335, 100%, 65%);
+    background: hsl(229, 57%, 11%);
     border-radius: 25px;
-    padding: 10px;
+   
     box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+
+  
   }
-  .meter span{
-    height: 20px;
-    width: 81.5%;
-    background: white;
+  .storage .meter::after{
     position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    top:50%;
+    left: 78%;
+        background: hsl(243, 100%, 93%);
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .storage .meter span{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 81%;
+    background-color: hsl(335, 100%, 65%);
     border-radius: 25px;
+    box-shadow: 0 0 5px hsl(335, 100%, 65%);
+    
+
+  }
+  .storage .meter span::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: white;
+    top:-13px;
+    right: -6px;
+  }
+  .storage .meter span::after{
+    position: absolute;
+    content:"185 GB Left";
+    color:black;
+    top:-35px;
+    right:-16px;
+    background-color: white;
+    padding :3px 6px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+
+  }
+  .storage p{
+    margin: 15px;
+  }
+  .left-size{
+    padding: 5px;
+    margin: 5px;;
   }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
