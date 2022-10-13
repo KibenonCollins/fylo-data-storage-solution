@@ -70,6 +70,7 @@ padding: 5px;
     width: 700px;
     background-color: hsl(228, 56%, 26%);
     border-radius: 15px;
+    position: relative;
 }
 .gb{
     color: white;
@@ -80,7 +81,7 @@ padding: 5px;
     
 }
 .meter { 
-    height: 20px; 
+    height: 15px; 
     width: 100%;
     position: relative;
     background: hsl(229, 57%, 11%);
@@ -93,11 +94,11 @@ padding: 5px;
   .storage .meter::after{
     position: absolute;
     content: "";
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     top:50%;
-    left: 78%;
-        background: hsl(243, 100%, 93%);
+    left: 79%;
+     background: hsl(243, 100%, 93%);
     transform: translateY(-50%);
     border-radius: 50%;
     z-index: 1;
@@ -107,41 +108,50 @@ padding: 5px;
     display: block;
     height: 100%;
     width: 81%;
-    background-color: hsl(335, 100%, 65%);
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border-radius: 25px;
     box-shadow: 0 0 5px hsl(335, 100%, 65%);
     
 
+  }
+  .left-size{
+    font-size: 30px;
+    position: absolute;
+    padding :20px 25px;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 5px 5px 0 5px;
+top:-32px;
+right: 14px;
+
+  }
+  .left-size span{
+    opacity: 50%;
   }
   .storage .meter span::before{
     position: absolute;
     content: "";
     width: 0;
     height: 0;
-    border: 7px solid transparent;
-    border-top-color: white;
-    top:-13px;
-    right: -6px;
+    border: 15px solid transparent;
+    border-color: white White transparent transparent;
+    
+    top:-32px;
+    right: -125px;
   }
   .storage .meter span::after{
     position: absolute;
-    content:"185 GB Left";
+    content:"";
     color:black;
-    top:-35px;
-    right:-16px;
-    background-color: white;
-    padding :3px 6px;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 5px;
+
+
+    
 
   }
+  
   .storage p{
     margin: 15px;
   }
-  .left-size{
-    padding: 5px;
-    margin: 5px;;
-  }
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
