@@ -32,7 +32,7 @@ This is the desktop view
 ![](./images/Desktop%20view%20.png)
 
 This is my Mobile view
-![](//images/mobile%20view.png)
+![](./images/mobile%20view.png)
 
 ### Links
 
