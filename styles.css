@@ -17,6 +17,11 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-desktop.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+
    
     
 }
@@ -162,8 +167,12 @@ right: 14px;
     display: flex;
   }
   .p2{
+    padding: 5px;
     margin-left: 85%;
-    display: flex;
+    
+  }
+  .last span{
+    padding:5px
   }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -175,7 +184,7 @@ right: 14px;
 
  }
  body{
-  background-image: url("/images/bg-mobile.png");
+  background-image: url("./images/bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
  }
