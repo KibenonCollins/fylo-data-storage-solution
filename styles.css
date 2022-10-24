@@ -123,12 +123,12 @@ padding: 5px;
   .left-size{
     font-size: 30px;
     position: absolute;
-    padding :20px 25px;
+    padding :20px 15px;
     background-color: white;
     font-weight: 700;
-    border-radius: 5px 5px 0 5px;
-top:-32px;
-right: 14px;
+    border-radius: 5px 5px 0 5px; 
+    top:-102px;
+    right: 14px;
 
   }
   .left-size span{
@@ -142,7 +142,6 @@ right: 14px;
     height: 0;
     border: 15px solid transparent;
     border-color: white White transparent transparent;
-    
     top:-32px;
     right: -125px;
   }
